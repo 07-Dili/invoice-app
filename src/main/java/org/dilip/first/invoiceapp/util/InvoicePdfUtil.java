@@ -30,8 +30,7 @@ public class InvoicePdfUtil {
 
             xmlReader.setContentHandler(fop.getDefaultHandler());
 
-            xmlReader.parse(new org.xml.sax.InputSource(
-                    new ByteArrayInputStream(foXml.getBytes(StandardCharsets.UTF_8))));
+            xmlReader.parse(new org.xml.sax.InputSource(new ByteArrayInputStream(foXml.getBytes(StandardCharsets.UTF_8))));
 
             pdfOutputStream.close();
 

@@ -16,6 +16,7 @@ public class InvoiceService {
     public InvoiceResponse generateInvoice(InvoiceRequest request) {
         String fo = InvoiceFoBuilder.buildFo(request);
         String base64Pdf = invoicePdfUtil.generateBase64Pdf(fo);
+
         return new InvoiceResponse(base64Pdf);
     }
 }
