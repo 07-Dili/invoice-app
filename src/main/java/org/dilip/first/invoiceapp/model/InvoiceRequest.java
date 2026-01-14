@@ -10,7 +10,9 @@ import java.util.List;
 public class InvoiceRequest {
 
     private Long orderId;
+
     private String orderDate;
+
     private Double totalAmount;
     private List<InvoiceItemData> items;
 }
